@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdul Rehman — Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+</head>
+<body>
+<canvas id="canvas-bg"></canvas>
+
+<nav>
+  <a href="#hero" class="logo" aria-label="Go to top">
+    <img src="logoo.png" alt="Abdul Rehman website logo">
+  </a>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#goals">Goals</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-badge">Frontend Developer · AI Enthusiast</div>
+  <h1 class="hero-name">Abdul Rehman</h1>
+  <p class="hero-title">Web Developer &amp; CS Student</p>
+  <p class="hero-desc">Crafting responsive, user-centric digital experiences with JavaScript, PHP, and HTML/CSS. Currently pursuing BS Computer Science at UAF.</p>
+  <div class="hero-cta">
+    <a href="#projects" class="btn btn-primary">View Work</a>
+    <a href="#contact" class="btn btn-outline">Contact Me</a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-visual">
+    <div class="hex-ring" style="width:100%;height:100%;position:absolute;top:0;left:0;"></div>
+    <div class="hex-ring hex-ring-2" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);"></div>
+    <div style="display:flex;align-items:center;justify-content:center;height:100%;position:relative;z-index:2;">
+      <div class="avatar-core">
+        <img src="IMG.png" alt="Portrait of Abdul Rehman" class="profile-photo">
+      </div>
+    </div>
+  </div>
+  <div class="about-content reveal">
+    <span class="section-label">About Me</span>
+    <h2 class="section-title">Driven by<br>Innovation</h2>
+    <p>I'm a Computer Science student at the University of Agriculture Faisalabad (2022–Present), passionate about software development and emerging technologies. My journey blends academic rigor with hands-on experience.</p>
+    <p>From building web platforms at ORIC UAF to exploring AI & Machine Learning, I strive to create solutions that are both functional and impactful.</p>
+    <div class="stat-row">
+      <div class="stat">
+        <span class="stat-num">3+</span>
+        <span class="stat-label">Months Interned</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">4+</span>
+        <span class="stat-label">Tech Skills</span>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="reveal">
+    <span class="section-label">What I Know</span>
+    <h2 class="section-title">Skills &amp; Tools</h2>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-icon">⚡</div>
+      <div class="skill-name">Frontend</div>
+      <p style="font-size:.9rem;color:rgba(224,247,255,.45);line-height:1.6;">Building responsive, pixel-perfect interfaces with clean semantic markup.</p>
+      <div class="skill-tags">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">JavaScript</span>
+      </div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:.1s">
+      <div class="skill-icon">🔧</div>
+      <div class="skill-name">Backend</div>
+      <p style="font-size:.9rem;color:rgba(224,247,255,.45);line-height:1.6;">Server-side scripting and database-driven web applications.</p>
+      <div class="skill-tags">
+        <span class="tag">PHP</span>
+        <span class="tag">SQL</span>
+      </div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:.2s">
+      <div class="skill-icon">📊</div>
+      <div class="skill-name">Data Tools</div>
+      <p style="font-size:.9rem;color:rgba(224,247,255,.45);line-height:1.6;">Data analysis and visualization using industry-standard office tools.</p>
+      <div class="skill-tags">
+        <span class="tag">Excel</span>
+        <span class="tag">PowerPoint</span>
+        <span class="tag">MS Word</span>
+      </div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:.3s">
+      <div class="skill-icon">🤖</div>
+      <div class="skill-name">AI / ML</div>
+      <p style="font-size:.9rem;color:rgba(224,247,255,.45);line-height:1.6;">Exploring machine learning fundamentals and AI application development.</p>
+      <div class="skill-tags">
+        <span class="tag">Intro to AI</span>
+        <span class="tag">ML Concepts</span>
+      </div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:.4s">
+      <div class="skill-icon">🌐</div>
+      <div class="skill-name">Languages</div>
+      <p style="font-size:.9rem;color:rgba(224,247,255,.45);line-height:1.6;">Effective communicator across technical and professional contexts.</p>
+      <div class="skill-tags">
+        <span class="tag">Urdu (Native)</span>
+        <span class="tag">English (Proficient)</span>
+      </div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:.5s">
+      <div class="skill-icon">🤝</div>
+      <div class="skill-name">Soft Skills</div>
+      <p style="font-size:.9rem;color:rgba(224,247,255,.45);line-height:1.6;">Strong collaborative and problem-solving abilities in team environments.</p>
+      <div class="skill-tags">
+        <span class="tag">Problem-Solving</span>
+        <span class="tag">Communication</span>
+        <span class="tag">Teamwork</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="reveal">
+    <span class="section-label">My Journey</span>
+    <h2 class="section-title">Experience</h2>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="exp-period">2022 – Present</div>
+      <div class="exp-role">BS Computer Science</div>
+      <div class="exp-company">University of Agriculture Faisalabad (UAF)</div>
+      <ul class="exp-bullets">
+        <li>Studying Computing, Programming &amp; Software Development.</li>
+        <li>Active participant in university tech initiatives and workshops.</li>
+      </ul>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="exp-period">Internship</div>
+      <div class="exp-role">Web Development Intern</div>
+      <div class="exp-company">ORIC · University of Agriculture Faisalabad</div>
+      <ul class="exp-bullets">
+        <li>Completed a 3-month internship in web development and site maintenance for ORIC.</li>
+        <li>Contributed to the design and development of the official ORIC website, ensuring a responsive interface.</li>
+        <li>Collaborated with the technical team to structure research data using HTML and CSS.</li>
+      </ul>
+    </div>
+    
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="reveal">
+    <span class="section-label">What I've Built</span>
+    <h2 class="section-title">Projects</h2>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-num">01</div>
+      <div class="project-name">Learning Path Website</div>
+      <p class="project-desc">A web platform that helps users follow structured learning paths, built with HTML, CSS, and JavaScript.</p>
+      <p class="project-desc" style="margin-top:10px;">
+        Live demo:
+        <a href="https://learn-path-abdulrehmandevx.replit.app" target="_blank" rel="noopener noreferrer" class="project-link">learn-path-abdulrehmandevx.replit.app</a>
+      </p>
+      <div class="skill-tags" style="margin-top:20px;">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">JavaScript</span>
+      </div>
+    </div>
+    <div class="project-card reveal" style="transition-delay:.1s">
+      <div class="project-num">02</div>
+      <div class="project-name">Interactive Forms Project</div>
+      <p class="project-desc">JavaScript-based dynamic form system that uses DOM manipulation and conditional logic to create an interactive user flow.</p>
+      <div class="skill-tags" style="margin-top:20px;">
+        <span class="tag">JavaScript</span>
+        <span class="tag">DOM</span>
+        <span class="tag">Logic</span>
+      </div>
+    </div>
+    <div class="project-card reveal" style="transition-delay:.2s">
+      <div class="project-num">03</div>
+      <div class="project-name">Other Web Experiments</div>
+      <p class="project-desc">A collection of small UI and frontend practice projects focused on layout systems, animations, and responsive interaction patterns.</p>
+       <p class="project-desc" style="margin-top:10px;">
+        Live demo:
+        <a href="https://oric.uaf.edu.pk" target="_blank" rel="noopener noreferrer" class="project-link">oric.uaf.edu.pk</a>
+      </p>
+      <div class="skill-tags" style="margin-top:20px;">
+      
+        <span class="tag">UI Practice</span>
+        <span class="tag">Frontend</span>
+        <span class="tag">Responsive</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- GOALS -->
+<section id="goals">
+  <div class="reveal">
+    <span class="section-label">What I Aim For</span>
+    <h2 class="section-title">Goals</h2>
+  </div>
+  <div class="goals-grid">
+    <div class="goal-card reveal">
+      <div class="goal-title">Professional Growth</div>
+      <p class="goal-desc">Becoming a professional full-stack web developer by strengthening both frontend and backend expertise.</p>
+    </div>
+    <div class="goal-card reveal" style="transition-delay:.1s">
+      <div class="goal-title">Career Direction</div>
+      <p class="goal-desc">Working in freelancing and remote tech jobs to collaborate with global teams and clients.</p>
+    </div>
+    <div class="goal-card reveal" style="transition-delay:.2s">
+      <div class="goal-title">Impactful Products</div>
+      <p class="goal-desc">Building useful web applications and digital platforms that solve practical, real-world problems.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="reveal">
+    <span class="section-label">Get In Touch</span>
+    <h2 class="section-title">Contact</h2>
+    <p style="color:rgba(224,247,255,.45);font-size:1.05rem;max-width:500px;margin:0 auto;">Available for internships, freelance projects, and collaboration opportunities.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/abdulrehman83/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn profile">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="https://www.instagram.com/mani_writes83/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram profile">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/AbdulRehmanBhai83" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook profile">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="https://x.com/Mani_writes83" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X profile">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+    </div>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-card reveal">
+      <span class="contact-icon">📧</span>
+      <div class="contact-label">Email</div>
+      <a class="contact-value" href="mailto:abdulrahmanbhai83@gmail.com">abdulrahmanbhai83@gmail.com</a>
+    </div>
+    <div class="contact-card reveal" style="transition-delay:.1s">
+      <span class="contact-icon">📱</span>
+      <div class="contact-label">Phone</div>
+      <span class="contact-value">+92 301 7963073</span>
+    </div>
+    <div class="contact-card reveal" style="transition-delay:.2s">
+      <span class="contact-icon">💼</span>
+      <div class="contact-label">LinkedIn</div>
+      <a class="contact-value" href="https://www.linkedin.com/in/abdulrehman83/" target="_blank">linkedin.com/in/abdulrehman83</a>
+    </div>
+    <div class="contact-card reveal" style="transition-delay:.3s">
+      <span class="contact-icon">📍</span>
+      <div class="contact-label">Location</div>
+      <span class="contact-value">Khurrianwala, Faisalabad</span>
+    </div>
+  </div>
+</section>
+
+<script src="scripts.js"></script>
+</body>
+</html>
